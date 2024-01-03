@@ -5,6 +5,7 @@
     max-width: 36rem;
     grid-gap: 50px;
     border-width: 0px;
+    height: 100%
 }
 
 #newWatchlistForm {
@@ -17,7 +18,4 @@ input {
 
 #showInfo {
     color: rgb(214, 64, 64);
-}
-body {
-    height: 100%;
 }
