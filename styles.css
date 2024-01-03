@@ -1,0 +1,23 @@
+#watchlistCards {
+    display: grid;
+    margin: auto;
+    padding-top: 50px;
+    max-width: 36rem;
+    grid-gap: 50px;
+    border-width: 0px;
+}
+
+#newWatchlistForm {
+    padding: 10px;
+}
+
+input {
+    border-radius: 8px;
+}
+
+#showInfo {
+    color: rgb(214, 64, 64);
+}
+body {
+    height: 100%;
+}

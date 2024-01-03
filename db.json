@@ -1,0 +1,32 @@
+{
+  "watchlistArray": [
+    {
+      "listName": "Alyssa's Watchlist",
+      "shows": [
+        {
+          "name": "Supernatural",
+          "type": "Show",
+          "streamingService": "Netflix",
+          "genre": "Action/Fantasy"
+        },
+        {
+          "name": "Welcome to Samdalri",
+          "type": "Show",
+          "streamingService": "Netflix",
+          "genre": "K-Drama/Romance"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "listName": "Different Watchlist",
+      "shows": [],
+      "id": 2
+    },
+    {
+      "listName": "Another Watchlist",
+      "shows": [],
+      "id": 3
+    }
+  ]
+}

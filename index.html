@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Watchlist App</title>
+    <!-- link own styles css and bootstrap css -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark">
+    <nav id="myApp" class="navbar navbar-dark bg-dark border border-secondary rounded-2 m-2 p-2">
+        <a class="navbar-brand" href="#">
+          <img src="download.png" width="40" height="40" class="d-inline-block align-center border border-dark rounded-4" alt="clipart of a televison">
+          CRUD Watchlist App
+        </a>
+      </nav>
+    <!-- CREATE a form to receive input for creating a new watchlist -->
+    <div id="newWatchlistForm">
+    <form class="text-center form-control bg-dark border border-secondary" style="max-width: 52rem; margin: auto;">
+        <label class="text-light" for="listName">Watchlist Name</label>
+        <input id="listName" placeholder="Enter new list name">
+        <label class="text-light" for="firstShow">Show Name</label>
+        <input id="firstShow" placeholder="Enter show name">
+        <button class="btn btn-outline-success" id="createWatchlist">Create New Watchlist</button>
+    </form>
+    </div>
+
+    <!-- div to hold watchlists -->
+    <div id="watchlistCards" class="card text-white bg-dark mb-3">
+        <!-- add cards with js-->
+    </div>
+<!-- form to update watchlist name -->
+    <div>
+    <form id="updateForm" class="text-center form-control bg-dark border border-secondary m-auto mt-5" style="max-width: 52rem; margin: auto;">
+        <label class="text-light" for="listId">Watchlist ID</label>
+        <input id="listId" placeholder="Enter ID of watchlist">
+        <label class="text-light" for="updateName">New Name</label>
+        <input id="updateName" placeholder="Enter new list name">
+        <a href="#myApp" class="btn btn-outline-danger" id="update" role="button">Update</a>
+    </form>
+    </div>
+<!-- script js and jquery -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="crud.js"></script>
+</body>
+<hr class="mt-5 text-light">
+<footer class="m-auto text-light text-center">Alyssa Favorito ©️ 2023-2024</footer>
+</html>
