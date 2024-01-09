@@ -96,14 +96,22 @@ $("#createWatchlist").on("click", function (e) {
   console.log("creating watchlist", $("#firstShow").val());
   // prevent button from reloading page by default
   e.preventDefault();
-  $.post(url, {
-    listName: $("#listName").val(),
-    shows: {
-      name: $("#firstShow").val(),
-      type: $("#mediaType").val(),
-      streamingService: $("#streamingService").val(),
-      genre: $("#genre").val(),
-    },
+  $.ajax({
+    url: url,
+    dataType: "json",
+    data: JSON.stringify({
+      listName: $("#listName").val(),
+      shows: [
+        {
+          name: $("#firstShow").val(),
+          type: $("#mediaType").val(),
+          streamingService: $("#streamingService").val(),
+          genre: $("#genre").val(),
+        },
+      ],
+    }), //house is converted into a string
+    contentType: "application/json",
+    type: "POST",
   });
 });
 
@@ -143,14 +151,12 @@ function addShows(id) {
   $.ajax(`${url}/${id}`, {
     method: "PUT",
     data: {
-      shows: [
-        {
-          name: $("#newShow").val(),
-          type: $("#newType").val(),
-          streamingService: $("#newStreamingService").val(),
-          genre: $("#newGenre").val(),
-        },
-      ],
+      shows: {
+        name: $("#newShow").val(),
+        type: $("#newType").val(),
+        streamingService: $("#newStreamingService").val(),
+        genre: $("#newGenre").val(),
+      },
     },
   });
 }

@@ -19,13 +19,12 @@
       "id": 1
     },
     {
-      "listName": "Different Watchlist",
-      "shows": [],
-      "id": 2
-    },
-    {
-      "listName": "Another Watchlist",
-      "shows": [],
+      "listName": "Flavio's List",
+      "shows": [
+        {
+          "name": "Welcome to Samdalri"
+        }
+      ],
       "id": 3
     }
   ]
