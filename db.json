@@ -7,7 +7,15 @@
           "name": "Welcome to Samdalri",
           "type": "",
           "streamingService": "",
-          "genre": ""
+          "genre": "",
+          "id": 1.1
+        },
+        {
+          "name": "Supernatural",
+          "type": "",
+          "streamingService": "",
+          "genre": "",
+          "id": 1.2
         }
       ],
       "id": 1

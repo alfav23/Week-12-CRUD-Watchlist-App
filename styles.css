@@ -19,3 +19,8 @@ input {
 #showInfo {
     color: rgb(214, 64, 64);
 }
+
+span {
+    border-radius: 2px;
+    color: rgb(108,117,125);
+}
