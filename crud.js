@@ -78,16 +78,39 @@ $.get(url).then((data) => {
               </button>
               <ul class="list-group list-group-flush">
                 <li id="showInfo" class="list-group-item bg-dark">
-                  Type: ${watchlist.shows[i].type} <br />
-                  Where to Stream: ${watchlist.shows[i].streamingService} <br />
-                  Genre: ${watchlist.shows[i].genre}
-                </li>
+                  Type: <span id="mediaType" contenteditable="true"></span> ${watchlist.shows[i].type} <br />
+                  Where to Stream: <span id="streamingService" contenteditable="true"></span> ${watchlist.shows[i].streamingService} <br />
+                  Genre: <span id="genre" contenteditable="true"></span> ${watchlist.shows[i].genre} <br />
+                  <button class="btn btn-small btn-outline-secondary" id="doneEditing">Done Editing</button>
+          
               </ul>
             </li>
           </ul>
         `)
       );
     }
+  });
+});
+
+// post input values into json shows properties on click of editing button
+$("#doneEditing").on("click", function(e) {
+  e.preventDefault()
+  $.ajax({
+    url: url,
+    dataType: "json",
+    data: JSON.stringify({
+      listName: $("#listName").val(),
+      shows: [
+        {
+          name: $("#firstShow").val(),
+          type: $("#mediaType").val(),
+          streamingService: $("#streamingService").val(),
+          genre: $("#genre").val(),
+        },
+      ],
+    }), //house is converted into a string
+    contentType: "application/json",
+    type: "POST",
   });
 });
 
@@ -104,12 +127,12 @@ $("#createWatchlist").on("click", function (e) {
       shows: [
         {
           name: $("#firstShow").val(),
-          type: $("#mediaType").val(),
-          streamingService: $("#streamingService").val(),
-          genre: $("#genre").val(),
+          type: "",
+          streamingService: "",
+          genre: "",
         },
       ],
-    }), //house is converted into a string
+    }), 
     contentType: "application/json",
     type: "POST",
   });

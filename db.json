@@ -4,28 +4,13 @@
       "listName": "Alyssa's Watchlist",
       "shows": [
         {
-          "name": "Supernatural",
-          "type": "Show",
-          "streamingService": "Netflix",
-          "genre": "Action/Fantasy"
-        },
-        {
           "name": "Welcome to Samdalri",
-          "type": "Show",
-          "streamingService": "Netflix",
-          "genre": "K-Drama/Romance"
+          "type": "",
+          "streamingService": "",
+          "genre": ""
         }
       ],
       "id": 1
-    },
-    {
-      "listName": "Flavio's List",
-      "shows": [
-        {
-          "name": "Welcome to Samdalri"
-        }
-      ],
-      "id": 3
     }
   ]
 }
