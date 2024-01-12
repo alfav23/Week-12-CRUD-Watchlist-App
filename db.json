@@ -1,24 +1,40 @@
 {
   "watchlistArray": [
     {
-      "listName": "Alyssa's Watchlist",
+      "listName": "Alyssa's List",
       "shows": [
         {
           "name": "Welcome to Samdalri",
           "type": "",
           "streamingService": "",
-          "genre": "",
-          "id": 1.1
-        },
-        {
-          "name": "Supernatural",
-          "type": "",
-          "streamingService": "",
-          "genre": "",
-          "id": 1.2
+          "genre": ""
         }
       ],
       "id": 1
+    },
+    {
+      "listName": "Flavio's List",
+      "shows": [
+        {
+          "name": "Love is Blind",
+          "type": "",
+          "streamingService": "",
+          "genre": ""
+        }
+      ],
+      "id": 2
+    },
+    {
+      "listName": "Jordan's List",
+      "shows": [
+        {
+          "name": "Welcome to Samdalri",
+          "type": "",
+          "streamingService": "",
+          "genre": ""
+        }
+      ],
+      "id": 3
     }
   ]
 }

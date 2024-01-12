@@ -30,7 +30,7 @@ $.get(url).then((data) => {
   data.map((watchlist) => {
     $(".card").append(
       $(html`
-        <div class="card-body border border-secondary rounded-2">
+        <div id=${watchlist.id} class="card-body border border-secondary rounded-2">
           <h6 class="text-end">Watchlist ${watchlist.id}</h6>
           <h5 class="card-title">
             ${watchlist.listName}
@@ -67,7 +67,7 @@ $.get(url).then((data) => {
 
     // for every show in a given watchlist, create html elements inside card body to hold show info
     for (let i = 0; i < watchlist.shows.length; i++) {
-      $(".card-body").append(
+      $(`#${watchlist.id}`).append(
         $(html`
           <ul class="list-group list-group-flush">
             <li class="list-group-item bg-dark text-light">
