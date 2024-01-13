@@ -7,22 +7,11 @@
           "name": "Welcome to Samdalri",
           "type": "",
           "streamingService": "",
-          "genre": ""
+          "genre": "",
+          "id": 10
         }
       ],
       "id": 1
-    },
-    {
-      "listName": "Flavio's List",
-      "shows": [
-        {
-          "name": "Love is Blind",
-          "type": "",
-          "streamingService": "",
-          "genre": ""
-        }
-      ],
-      "id": 2
     },
     {
       "listName": "Jordan's List",
@@ -35,6 +24,43 @@
         }
       ],
       "id": 3
+    },
+    {
+      "listName": "Flavio's List",
+      "shows": [
+        {
+          "name": "Love is Blind",
+          "type": "",
+          "streamingService": "",
+          "genre": ""
+        }
+      ],
+      "id": 4
+    },
+    {
+      "listName": "Flavio's List",
+      "shows": [
+        {
+          "name": "Welcome to Samdalri",
+          "type": "",
+          "streamingService": "",
+          "genre": ""
+        }
+      ],
+      "id": 5
+    },
+    {
+      "listName": "Nicholas' List",
+      "shows": [
+        {
+          "name": "Love is Blind",
+          "type": "",
+          "streamingService": "",
+          "genre": "",
+          "id": 982
+        }
+      ],
+      "id": 6
     }
   ]
 }

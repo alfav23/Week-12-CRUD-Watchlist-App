@@ -74,7 +74,7 @@ $.get(url).then((data) => {
               ${watchlist.shows[i].name}
               <button
                 class="btn btn-outline-light"
-                onclick="deleteShow(${watchlist.shows[i].id})"
+                onclick="deleteShow(982)"
               >🗑️
               </button>
               <ul class="list-group list-group-flush">
@@ -120,6 +120,9 @@ $(document).on("click", "#doneEditing", function(e) {
 
 // create event listener for create new watchlist button
 $("#createWatchlist").on("click", function (e) {
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
   console.log("creating watchlist", $("#firstShow").val());
   // prevent button from reloading page by default
   e.preventDefault();
@@ -136,6 +139,10 @@ $("#createWatchlist").on("click", function (e) {
           type: "",
           streamingService: "",
           genre: "",
+          // use random function to generate random id
+          id: getRandomInt(1000)
+          // // set the id of the show to equal the last shows' id + 1
+          // id: $.get(url , `/${shows.id[shows.id.length-1]}`) + 1
         },
       ],
     }), 
@@ -170,7 +177,7 @@ function deleteWatchlist(id) {
 // function to DELETE show from watchlist using show id 
 // grabs the correct id but returns a 404 error⛔
 function deleteShow(id) {
-  $.ajax(`${url}/${id}`, {
+  $.ajax(`${url}/shows/${id}`, {
     method: "DELETE",
   });
 }
@@ -190,6 +197,8 @@ function addShows(id) {
           type: "",
           streamingService: "",
           genre: "",
+          // // set the id of the show to equal the last shows' id + 1
+          // id: $.get(url , `/${shows.id[shows.id.length-1]}`) + 1
         },
       ],
     }), 
