@@ -74,7 +74,7 @@ $.get(url).then((data) => {
               ${watchlist.shows[i].name}
               <button
                 class="btn btn-outline-light"
-                onclick="deleteShow(982)"
+                onclick="deleteShow(${watchlist.shows[i].id})"
               >🗑️
               </button>
               <ul class="list-group list-group-flush">
